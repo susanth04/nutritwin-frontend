@@ -1,9 +1,9 @@
-"use client"
+﻿"use client"
 
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
 
@@ -35,9 +35,7 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className={`text-sm font-medium transition-colors ${
-                isActive(item.href) ? "text-foreground" : "text-muted-foreground hover:text-foreground"
-              }`}
+              className={	ext-sm font-medium transition-colors }
             >
               {item.name}
             </Link>
@@ -45,6 +43,21 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Button
+            variant="ghost"
+            size="icon"
+            asChild
+            className="hover:bg-emerald-50 dark:hover:bg-emerald-950"
+          >
+            <a
+              href="https://github.com/susanth04/Personalised-nutrition-planner"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View source on GitHub"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+          </Button>
           <ModeToggle />
 
           {/* Mobile menu button */}
@@ -68,11 +81,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`block px-3 py-2 text-base font-medium rounded-md ${
-                  isActive(item.href)
-                    ? "bg-gray-100 dark:bg-gray-800 text-foreground"
-                    : "text-muted-foreground hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-foreground"
-                }`}
+                className={lock px-3 py-2 text-base font-medium rounded-md }
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
