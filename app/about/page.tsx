@@ -90,31 +90,6 @@ export default function AboutPage() {
               </p>
             </CardContent>
           </Card>
-
-          <Card className="md:col-span-2">
-            <CardHeader>
-              <CardTitle>Contact Us</CardTitle>
-              <CardDescription>Get in touch with our team</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid gap-6 md:grid-cols-2">
-                <div>
-                  <h3 className="mb-2 text-lg font-medium">Email</h3>
-                  <p className="text-gray-600 dark:text-gray-300">support@personalizednutrition.example.com</p>
-                </div>
-                <div>
-                  <h3 className="mb-2 text-lg font-medium">Address</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    123 Health Street
-                    <br />
-                    Nutrition City, NC 12345
-                    <br />
-                    United States
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </main>
